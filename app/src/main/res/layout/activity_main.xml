@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hello World!"-->
+<!--        android:textSize="22dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.157"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView"-->
+<!--        app:layout_constraintVertical_bias="0.052" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="124dp"-->
+<!--        android:layout_height="122dp"-->
+<!--        android:src="@drawable/usercircle_120225"-->
+<!--        tools:layout_editor_absoluteX="39dp"-->
+<!--        tools:layout_editor_absoluteY="82dp" />-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_photo_profile"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_act_profile"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="104dp"
+            android:src="@drawable/icn_login_profile"
+            app:layout_constraintHorizontal_bias="0.127"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_edit_photo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="172dp"
+            android:src="@drawable/btn_login_edit_photo"
+            app:layout_constraintEnd_toEndOf="@+id/img_act_profile"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="170dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="164dp"
+            android:text="안드 최고~.~"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/img_edit_photo"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_info_profile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_photo_profile"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="86dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="56dp"
+            android:gravity="center"
+            android:text="이름"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintHorizontal_bias="0.127"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="42dp" />
+
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="56dp"
+            android:ems="10"
+            android:hint="ex) 이성은"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/txt_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_hobby"
+            android:layout_width="86dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="취미"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintHorizontal_bias="0.126"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+
+        <EditText
+            android:id="@+id/edt_hobby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="128dp"
+            android:ems="10"
+            android:hint="ex) 코딩, 음악듣기"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/txt_hobby"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/txt_like"
+            android:layout_width="86dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="좋아하는 것"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            app:layout_constraintHorizontal_bias="0.126"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_hobby" />
+
+        <EditText
+            android:id="@+id/edt_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="196dp"
+            android:ems="10"
+            android:hint="ex) 재밌는것, 여행 "
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/txt_like"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_dislike"
+            android:layout_width="86dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="싫어하는 것"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            app:layout_constraintHorizontal_bias="0.126"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_like" />
+
+        <EditText
+            android:id="@+id/edt_dislike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="268dp"
+            android:ems="10"
+            android:hint="ex) 인적성, 취준"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/txt_dislike"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
